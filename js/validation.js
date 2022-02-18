@@ -24,8 +24,13 @@ function nameValidate(){
     }else if(!regexName.test(fullName)){
         $("#ok-1").text("Only alphabets Are allowed")
         $("#ok-1").show()
+    }else if(fullname.length < 4 || fullname >16){
         
-    }else{
+          $("#ok-1").text("3-15 characters allowed")
+        $("#ok-1").show()
+    }
+        
+    else{
         $("#ok-1").hide()
      a=1
         
